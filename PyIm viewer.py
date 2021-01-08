@@ -32,7 +32,8 @@ layout = [
         gui.Column(image_view),
     ]
 ]
-window = gui.Window("PyIm Viewer", layout)
+window = gui.Window("PyIm Viewer", layout).finalize()
+window.Maximize()
 
 # Event loop
 while True:
